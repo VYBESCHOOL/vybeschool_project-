@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vybeschool Login</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffe600 0%, #fffde4 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+        }
+        .login-container {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            padding: 40px 32px 32px 32px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #ffe600;
+            margin-bottom: 16px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0 #000, 4px 4px 0 #ffe600;
+        }
+        .login-title {
+            color: #222;
+            font-size: 1.3rem;
+            margin-bottom: 24px;
+        }
+        .input-group {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 6px;
+            color: #000;
+            font-weight: 500;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 2px solid #ffe600;
+            border-radius: 6px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .input-group input:focus {
+            border-color: #000;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, #ffe600 60%, #fffde4 100%);
+            color: #000;
+            font-weight: bold;
+            border: 2px solid #000;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: background 0.2s, color 0.2s;
+        }
+        .login-btn:hover {
+            background: #000;
+            color: #ffe600;
+        }
+        .footer {
+            margin-top: 24px;
+            color: #222;
+            font-size: 0.95rem;
+        }
+        .footer a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+            color: #ffe600;
+        }
+    </style>
+</head>
+<body>
+    <form class="login-container">
+        <div class="logo">Vybeschool</div>
+        <div class="login-title">Login to your account</div>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required autocomplete="username">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+        <div class="footer">
+            Don’t have an account? <a href="#">Sign up</a>
+        </div>
+    </form>
+</body>
+</html> 
